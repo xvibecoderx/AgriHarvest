@@ -1,0 +1,1 @@
+export default function Contact(){ return (<section className='container py-10'><h1 className='text-2xl font-bold mb-4'>Contact</h1><p className='text-[var(--muted)]'>Email: info@agriharvest.example | Phone: +91 98765 43210</p></section>) }

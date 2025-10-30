@@ -1,0 +1,1 @@
+export default function Footer(){ return (<footer className='mt-12'><div className='container py-6 text-center'><div>© 2025 AgriHarvest</div><div>Made with ❤️ for sustainable farming</div></div></footer>) }

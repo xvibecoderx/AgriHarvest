@@ -1,0 +1,1 @@
+export default function About(){ return (<section className='container py-10'><h1 className='text-2xl font-bold mb-4'>About AgriHarvest</h1><p className='text-[var(--muted)] max-w-2xl'>We connect sustainable farmers directly with buyers — traceability and fair pricing.</p></section>) }

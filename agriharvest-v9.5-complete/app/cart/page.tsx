@@ -1,0 +1,4 @@
+'use client'
+import { useCart } from '@/contexts/cart'
+import Link from 'next/link'
+export default function CartPage(){ const { cart, total } = useCart(); return (<section className='container py-10'><h1 className='text-2xl font-bold mb-4'>Your Cart</h1>{cart.length===0?(<div className='text-center py-20'><p>Cart is empty</p><Link href='/products' className='btn btn-primary'>Shop products</Link></div>):(<div className='space-y-4'>{cart.map(i=>(<div key={i.id} className='flex items-center gap-4 card p-4'><img src={i.image} className='w-24 h-24 object-cover rounded' alt={i.name}/><div className='flex-1'><h3 className='font-semibold'>{i.name}</h3><p className='text-sm text-[var(--muted)]'>₹{i.price}</p><p>Qty: {i.qty}</p></div></div>))}<div className='mt-4 font-semibold'>Total: ₹{total}</div></div>)}</section>) }
